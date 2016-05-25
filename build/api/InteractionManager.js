@@ -92,3 +92,5 @@ var InteractionManager = {
     return setDeadline;
   }()
 };
+
+module.exports = InteractionManager;

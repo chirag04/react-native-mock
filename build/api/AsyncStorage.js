@@ -8,9 +8,9 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 function wrap(value, callback) {
   return Promise.resolve(value).then(function (obj) {
-    return callback(null, obj);
+    return callback && callback(null, obj);
   }, function (err) {
-    return callback(err);
+    return callback && callback(err);
   });
 }
 
